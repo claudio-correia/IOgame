@@ -322,6 +322,9 @@ function drawFood(food) {
     drawCircle(food.x - player.x + global.screenWidth / 2,
                food.y - player.y + global.screenHeight / 2,
                food.radius, global.foodSides);
+   drawCircle(player.x,
+                player.y ,
+               food.radius, global.foodSides);
 }
 
 function drawVirus(virus) {
